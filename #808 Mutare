@@ -1,0 +1,17 @@
+void sub (int n,int a[],int x)
+{
+    int m=n-1;
+    for(int i=n-1;i>-1;i--)
+    {
+        if(a[i]!=x)
+        {
+            a[m]=a[i];
+            m--;
+        }
+    }
+    while(m>=0)
+    {
+        a[m]=x;
+        m--;
+    }
+}
